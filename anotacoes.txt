@@ -1,0 +1,77 @@
+Next.js
+
+ * Next.js é um framework por cima do React (substitui o create react app).
+ * É uma camada intermediária entre o frontend e o backend responsável por conseguir construir a interface da nossa aplicação
+ por um servidor (camada intermediária) e quando o usuário acessar nossa aplicação tudo já estará pronto. O Next não remove qualquer
+ flexibilidade nem adiciona muitas funcionalidades em cima do React puro como já é conhecido.
+
+Conceitos:
+ * SPA (Single Page Application);
+  - Aplicações de página única, são aplicações que o JS renderiza o conteúdo.
+
+ * SSR (Server-Side Rendering);
+  - É o processo de pegar todos os Javascript e todos os CSS de um site que, geralmente 
+  é carregado no browser (client-side), e renderizá-los como estático do lado do servidor.
+  O Next.js por possuir um server em seu core já realiza essa renderização.
+
+ * SSG (Static Site Generation).
+  - Cria uma página estática para conteúdos que são acessados com uma determinada frequência.
+
+--------------
+
+Formas de criar um projeto com React:
+ * create-react-app (Funcionalidades apenas de uma SPA);
+ * Gatsby (Framework em cima do React feito especialmente para SSG);
+ * Next (É um conjunto de SPA, SSR e SSG);
+
+--------------
+
+Projeto Next
+
+Deletar:
+ * Readme.md;
+ * Pasta styles;
+ * favicon.ico e vercel.svg da pasta public;
+ * pasta api da pasta pages.
+
+--------------
+
+Arquivos
+
+ * _app.js é o arquivo que engloba os componentes que ficarão em exibição em todas as páginas como um menu ou sidebar;
+ * index.js e demais arquivos são as páginas que serão alteradas durante a aplicação. O index por padrão é a home da aplicação.
+
+--------------
+
+Dependências
+
+ * Instalar: yarn add typescript @types/react @types/react-dom @types/node -D
+
+OBS.
+ * Instalar com a flag -D pois não será necessário usar as dependências em produção;
+ * Remover uma biblioteca: yarn remove nome-da-biclioteca.
+
+--------------
+
+Tag Head do Next
+ * Tudo que eu colocar nesta tag será inserido automaticamente no head do HTML.
+
+--------------
+
+CSS Models
+ * É uma forma de aplicar um CSS apenas para um componente.
+
+--------------
+
+useEffect
+ * hook que dispara efeitos colaterais. É quando algo mudar ou algo acontecer eu quero executar uma função.
+
+Recebe dois parâmetros:
+1. O que eu quero executar?
+2. QUando eu quero executar?
+
+--------------
+
+Context API (API de Contexto)
+
+Contexto: forma de realizar comunicação entre vários componentes da aplicação.
