@@ -68,10 +68,17 @@ useEffect
 
 Recebe dois parâmetros:
 1. O que eu quero executar?
-2. QUando eu quero executar?
+2. Quando eu quero executar?
+
+OBS. Quando é passado um array vazio como segundo parâmetro a função será executada logo que o componente for acionado.
 
 --------------
 
 Context API (API de Contexto)
 
 Contexto: forma de realizar comunicação entre vários componentes da aplicação.
+
+--------------
+
+Side Effects
+ * Efeitos colaterais, quando algo mudar quero que outra coisa seja executada.
