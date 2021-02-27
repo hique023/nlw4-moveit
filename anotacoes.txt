@@ -134,3 +134,8 @@ Hospedagem
 6. Selecionar o perfil.
 7. Informar que não possui um projeto criado.
 8. Dar um nome ao projeto.
+9. Apenas aceitar o diretório (Caso esteja na pasta do projeto).
+10. Informe n para não sobrescrever nenhuma configuração padrão de projeto.
+11. Caso deseje realizar um novo deploy basta executar vercel novamente.
+ * OBS. Ao executar o comando vercel apenas, será gerado uma aplicação em um ambiente de testes.
+12. Para realizar um novo deploy em produção, deve-se executar: vercel --prod
