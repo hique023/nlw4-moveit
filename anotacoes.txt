@@ -82,3 +82,55 @@ Contexto: forma de realizar comunicação entre vários componentes da aplicaç�
 
 Side Effects
  * Efeitos colaterais, quando algo mudar quero que outra coisa seja executada.
+
+--------------
+
+Storage
+
+ * Local Storage: storage de chave / valor que armazena texto. Não consigo armazenar objeto a não ser que ele seja armazenado como texto.
+ 
+ * Session Storage: semelhante ao Local Storage mas as informações armazenadas são perdidas quando a sessão é encerrada.
+ 
+ * IndexedDB: banco de dados mais completo.
+ 
+ * Web SQL: semelhante ao SQLite.
+ 
+ * Cookies: uma forma mais antigas de armazenar dados.
+ Funciona de uma forma semelhante ao Local Storage e armazena informações em texto.
+ Podemos também especificar o domínio, quando expirta, quando é um Cookie 
+ HTTPOnly (Posso acessar no backend ou apenas no frontend), armazeno um Cookie
+ seguro (Disponível apenas quando tenho HTTPS), SameSite (Disponível no site com o mesmo domínio).
+
+--------------
+
+Biblioteca para Cookies
+ * js-cookie
+
+Instalação
+ * yarn add js-cookie
+
+OBS. Algumas bibliotecas construídas com JS não apresentam ao TS as tipagens, por isso
+é necessário realizar a instalação por um repositório terceiro.
+
+Instalação da Biblioteca Terceira
+ * yarn add @types/js-cookie -D
+
+--------------
+
+// Funciona apenas em páginas.
+
+--------------
+
+Hospedagem
+
+ * Next
+ * Vercel.
+
+1. Criar conta na Vercel
+2. Instalar a Vercel globalmente na máquina.
+3. Logar na Vercel: vercel login
+4. Dentro da pasta do projeto executar apenas: vercel
+5. Confirmar que deseja fazer deploy da aplicação com y.
+6. Selecionar o perfil.
+7. Informar que não possui um projeto criado.
+8. Dar um nome ao projeto.
